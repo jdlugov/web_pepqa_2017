@@ -1,0 +1,473 @@
+/*
+  Stylesheet PEPQA 2017
+  Author : Jorge Luis Mayorga jl.mayorga236@uniandes.edu.co
+  Version: 2.1
+  */
+
+
+/* ------------------------------------------------------------------------- */
+/* Fonts Import */
+  @import url('http://fonts.googleapis.com/css?family=Lato:100,300,400,700');
+  @import url('http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700');
+  @import url('http://fonts.googleapis.com/css?family=Noto+Sans:400,700');
+  @import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+
+
+    @font-face {
+        font-family: CerbeticaRegular;
+        src: url(Rampung.ttf);
+    }
+
+/* ------------------------------------------------------------------------- */
+
+   
+    
+/* ------------------------------------------------------------------------- */
+/* Animations */
+  @-webkit-keyframes BackgroundAnimated {
+      0%{background-position:0% 83%}
+      50%{background-position:100% 18%}
+      100%{background-position:0% 83%}
+  }
+  @-moz-keyframes BackgroundAnimated {
+      0%{background-position:0% 83%}
+      50%{background-position:100% 18%}
+      100%{background-position:0% 83%}
+  }
+  @keyframes BackgroundAnimated { 
+      0%{background-position:0% 83%}
+      50%{background-position:100% 18%}
+      100%{background-position:0% 83%}
+  }
+/* ------------------------------------------------------------------------- */
+
+/* ------------------------------------------------------------------------- */
+/* Body */
+	body 
+	{
+		font-family: 'Lato', sans-serif;
+		font-weight: 300;
+		font-size: 15px;
+		line-height: 22px;
+		color: #000;
+		background: linear-gradient(45deg, #357d38, #1b3c1d, #83d583);
+		background-size: 600% 600%;
+		-webkit-animation: BackgroundAnimated 20s ease infinite;
+		-moz-animation: BackgroundAnimated 20s ease infinite;
+		animation: BackgroundAnimated 20s ease infinite;
+	} 
+	#BodyBg
+	{
+		background: url(Pattern2.png) left top repeat;
+        padding-left: 70px;
+        padding-right: 70px;
+        background-attachment: fixed;
+
+	}
+#Call4PapersDiv{
+    background: url(Call4PapersBg.png) left top repeat;
+}
+	p
+	{
+		font-family: 'Open Sans', sans-serif;
+		font-size: 20px;
+		max-width: 5000px;
+		display: block;
+		text-align: left;
+
+	}
+#map {
+        width: 100%;
+        height: 300px;
+        background-color: grey;
+      }
+ /* ------------------------------------------------------------------------- */
+ 
+
+
+
+/* ---------------------------------------------------------------------- */
+/* Pre NavBar
+/* ---------------------------------------------------------------------- */
+
+        .PreNavBar{
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        .PreNavBar .Links{
+            padding-left: 0px;
+        }
+        .PreNavBar .Links ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+        .PreNavBar .Links li {
+            float: left;
+            list-style-type: none;
+            border-right: thick solid #fbfbfb;
+            border-right-width: 1px;
+            
+            margin-bottom: 10px;
+            margin-top: 10px;
+
+        }
+        .PreNavBar .Links li a {
+            display: block;
+            color: #fbfbfb;
+            text-align: center;
+            text-decoration: none;
+            padding-left: 5px;
+            padding-right: 5px;
+            padding-top: 0px;
+            padding-bottom: 0px;
+        }
+        .PreNavBar .Links li a:hover:not(.active) {
+            color: #ddd;
+        }
+        .PreNavBar .Links .active {
+            background-color: #4CAF50;
+        }
+
+    /* ------------------------------------------------------------------ */
+    /* Pre NavBar Links
+    /* ------------------------------------------------------------------ */
+
+    /* ------------------------------------------------------------------ */
+
+    /* ------------------------------------------------------------------ */
+    /* Pre NavBar Social
+    /* ------------------------------------------------------------------ */
+
+        .Social-Icon {
+            color: #fff; 
+            border-right-width: 0px;
+            border-right-width: 0px;
+            vertical-align: top;
+            display: inline;
+            padding-top: 0px;
+            padding-bottom: 0px;
+        }
+        li.Social-Icon  {
+            vertical-align: top;
+            display: inline;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            ;
+        }
+        li.Social-Icon a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 12px;
+        }
+        li.Social-Icon a:hover:not(.active) {
+            color: #fff;
+        }
+    /* ------------------------------------------------------------------ */
+
+
+/* ---------------------------------------------------------------------- */
+
+    
+
+/* ------------------------------------------------------------------------- */
+/* NavBar */
+
+
+
+.navbar-brand{
+    padding: 5px;
+}
+.container-fluid{
+   height: 50px;
+
+}
+#myNavbar
+{
+    padding-top: 0px;
+    
+}
+.dropdown .dropdown-menu {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+
+    max-height: 0;
+    display: block;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.dropdown.open .dropdown-menu {
+    max-height: 200px;
+    opacity: 1;
+}
+.navbar-inverse {
+    background-color: #fff;
+    border-color: #fff;
+        font-family: Verdana, Geneva, sans-serif;
+        font-size: 12px;
+    
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    color: #000;
+    background-color: #fff;
+}
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
+    color: #000;
+    background-color: #fff;
+}.navbar-nav>li>a:hover {
+    color: #000;
+    background-color: transparent;
+}
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+    color: #000;
+    background-color: transparent;
+}
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+    background-color: #5a5;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: #000;
+}
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
+    color: #3c763d;
+    background-color: #fff;
+}
+.navbar-nav>li>a {
+    padding-right: 5px;
+    padding-left: 5px;
+    border-right: thick solid #ddd;
+    border-right-width: 1px;
+    
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.navbar-nav>li {
+    
+}
+
+.fa-facebook {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: rgba(61,91,153,0.5);
+    border-radius: 5px;
+     -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1); 
+}
+.fa-facebook:hover {
+    background-color: #3d5b99;
+     -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.05); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.05); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.05);
+    transition: all 200ms ease-in;
+    transform: scale(1.05); 
+}
+.fa-twitter {
+    padding:10px 12px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: rgba(0,172,237,0.5);
+    border-radius: 5px;
+     -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1); 
+}
+.fa-twitter:hover {
+    background-color: #00aced;
+     -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.05); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.05); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.05);
+    transition: all 200ms ease-in;
+    transform: scale(1.05); 
+}
+.fa-linkedin {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: rgba(0,115,164,0.5);
+    border-radius: 5px;
+      -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1); 
+}
+.fa-linkedin:hover {
+    background-color: #0073a4;
+     -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.05); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.05); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.05);
+    transition: all 200ms ease-in;
+    transform: scale(1.05); 
+}
+/* ------------------------------------------------------------------------- */
+
+
+
+.SponsorBlackBox{
+    opacity: 1;
+    
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);  
+}
+.SponsorBlackBox:hover{
+    background-color: #e5e5e5;
+    opacity: 1;
+    border-radius: 5px;
+        -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.05);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.05);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.05);
+    transition: all 200ms ease-in;
+    transform: scale(1.05);
+}
+
+.PepqaTextBox{
+    
+        text-align: justify;
+    text-justify: inter-word;
+    font-size:16px;
+   
+    word-break: keep-all; /*this stops the word breaking*/
+}
+
+#MainBoard{
+    
+    background: url("mainbg.png");
+    background-repeat: no-repeat;
+    margin-top: 5px;
+    border-radius: 5px;
+    
+}
+
+#SubImg{
+        -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1); 
+}
+#SubImg:hover{
+        background-color: #e5e5e5;
+    opacity: 1;
+    border-radius: 5px;
+        -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.05);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.05);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.05);
+    transition: all 200ms ease-in;
+    transform: scale(1.05);
+}
+.ImgZoom{
+        -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1); 
+}
+.ImgZoom:hover{
+        -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.15);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.15);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.15);
+    transition: all 200ms ease-in;
+    transform: scale(1.15);
+}
+
+
+.BoxTitle{
+    font-family: CerbeticaRegular;
+}
+.BorderRight
+{
+    border-right: thick solid #fbfbfb;
+            border-right-width: 1px;
+}
+
+.dropdown:hover{
+    
+    color: #2c5c36;
+}
+
+@media only screen and (max-width: 500px) {
+    #BodyBg{
+        
+    padding-left: 5px;
+    padding-right: 5px;
+
+    }
+    .Links{
+        display:none;
+    }
+    #NavBarT1{
+        display:none;
+    }
+    #NavBarT2{
+        display:none;
+    }
+    .navbar-collapse{
+        background-color: #fff;
+        z-index: 1000;
+    }
+}

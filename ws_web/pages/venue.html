@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- ------------------------------------------------------------------------- -->
+<!-- Begin :: HTML Head -->
+<!-- ------------------------------------------------------------------------- -->
+<head>
+    <!-- meta -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="">
+      <meta name="author" content="">
+    <!--/ meta-->
+
+    <!-- title-->
+      <title> PEPQA 2017</title>
+    <!--/title-->
+    
+    <!-- jQuery -->
+    	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <!-- /jQuery -->
+    
+    <!-- css -->
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	    <link href="/css/font-awesome.min.css" rel="stylesheet">
+	    <link href="/css/main.css" rel="stylesheet">
+     <!--/css-->
+
+	<!--[if lt IE 9]>
+	    <script src="js/html5shiv.js"></script>
+	    <script src="js/respond.min.js"></script>
+	<![endif]--> 
+
+    <!--ico-->     
+      <link rel="shortcut icon" href="images/ico/pepqalogo.ico">
+    <!--/ico -->
+
+    <!-- appletouch -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+      <!-- /appletouch -->
+
+</head><!--/head-->
+<!-- ------------------------------------------------------------------------- -->
+<!-- End :: HTML Head -->
+<!-- ------------------------------------------------------------------------- -->
+
+
+
+
+
+<!-- ------------------------------------------------------------------------- -->
+<!-- Begin :: HTML Body -->
+<!-- ------------------------------------------------------------------------- -->
+<body>
+<div id="BodyBg"  style="padding:12px;">
+
+	<!--   NavBar -->
+    <header id="header">    
+    <div id="Pepqa2017NavBar"></div>
+    </header>
+    <!-- / NavBar -->
+   
+    <!-- Intro-->
+    <div class="panel panel-default">
+    <div class="panel-body" style="padding:5px;">
+     
+
+      <div class="col-sm-12" style="padding:0px;">
+       <img src="/images/venue/venue_banner.png" width="100%">
+          <br>
+          <br>
+          <div class="col-sm-12" style="padding:0px;">
+              <div class="col-sm-9" style="padding:0px;"></div>
+              <div class="col-sm-3" style="padding:0px;">
+              <ul class="list-inline">
+              <li><a href="#BogotaInfo">Intro</a></li>
+             <!-- <li><a href="#BogotaTransport">Transport</a></li>
+              <li><a href="#BogotaAccommodation">Accommodation</a></li> -->
+            </ul>
+              </div>
+          </div>
+          <div  id="BogotaInfo">
+              <div class="col-sm-12 PepqaTextBox">
+
+                  <div class="col-sm-3">
+                      <img src="/images/venue/v1.png" class="img-circle" alt="Cinque Terre" width="100%">
+                  </div>
+                  <div class="col-sm-1"></div>
+                  <div class="col-sm-7">         
+
+                      <h1 style="font-size:1.2em">
+                        <strong>Universidad Nacional de Colombia, Sede Manizales. </strong></h1>   
+                      <p class="PepqaTextBox">
+                            The National University of Colombia headquarters Manizales is a Colombian public university, headquarters of the National University of Colombia, located in the city of Manizales, Caldas.. Located next to the airport of the same name, in the former facilities of the workshops of the Department of Public Works of the Department of Caldas, has an area of 101,504 m² and about 21,760 m² of built area. There, the curricular programs of Chemical Engineering, Electrical Engineering, Physical Engineering, Electronic Engineering, Industrial Engineering, Mathematics and Information Systems Administration work.
+
+                      </p>
+
+                      <a href="http://www.manizales.unal.edu.co/ ">http://www.manizales.unal.edu.co/ </a>
+
+                  </div>
+              </div> 
+              <br>
+              <br>
+    
+              <br>   
+           </div>
+          
+
+          
+            <br>   
+            </div>
+      </div>  
+
+        
+        
+    </div>
+    </div>
+    <!--/Intro-->
+
+
+    <div class="panel panel-default panel-body"  style="padding:0px;">
+    <div id="Pepqa2017Footer"></div>
+    </div>
+
+   
+    <script>$("#Pepqa2017NavBar").load("/src/NavBar.html");</script>
+    <script>$("#Pepqa2017Carousel").load("/src/Carousel.html");</script>
+    <script>$("#Pepqa2017Info").load("/src/Info.html");</script>    
+    <script>$("#Pepqa2017Benefits").load("/src/Benefits.html");</script> 
+    <script>$("#Pepqa2017Topics").load("/src/Topics.html");</script> 
+    <script>$("#Pepqa2017Footer").load("/src/Footer.html");</script> 
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+    <script>
+
+	var $animation_elements = $('.animation-element');
+	var $window = $(window);
+	function check_if_in_view() {
+	  var window_height = $window.height();
+	  var window_top_position = $window.scrollTop();
+	  var window_bottom_position = (window_top_position + window_height);
+	 
+	  $.each($animation_elements, function() {
+	    var $element = $(this);
+	    var element_height = $element.outerHeight();
+	    var element_top_position = $element.offset().top;
+	    var element_bottom_position = (element_top_position + element_height);
+	 
+	    //check to see if this current container is within viewport
+	    if ((element_bottom_position >= window_top_position) &&
+		(element_top_position <= window_bottom_position)) {
+	      $element.addClass('in-view');
+	    } else {
+	      $element.removeClass('in-view');
+	    }
+	  });
+ }
+	$window.on('scroll resize', check_if_in_view);
+	$window.trigger('scroll');
+	</script>
+    
+    
+
+</body>
+</html>

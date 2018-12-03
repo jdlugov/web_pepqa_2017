@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- ------------------------------------------------------------------------- -->
+<!-- Begin :: HTML Head -->
+<!-- ------------------------------------------------------------------------- -->
+<head>
+    <!-- meta -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="">
+      <meta name="author" content="">
+    <!--/ meta-->
+
+    <!-- title-->
+    <title> PEPQA 2019 </title>
+    <!--/title-->
+    
+    <!-- jQuery -->
+    	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <!-- /jQuery -->
+    
+    <!-- css -->
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	    <link href="/css/font-awesome.min.css" rel="stylesheet">
+	    <link href="/css/main.css" rel="stylesheet">
+     <!--/css-->
+
+	<!--[if lt IE 9]>
+	    <script src="js/html5shiv.js"></script>
+	    <script src="js/respond.min.js"></script>
+	<![endif]--> 
+
+    <!--ico-->     
+      <link rel="shortcut icon" href="images/ico/pepqalogo.ico">
+    <!--/ico -->
+
+    <!-- appletouch -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+      <!-- /appletouch -->
+
+</head><!--/head-->
+<!-- ------------------------------------------------------------------------- -->
+<!-- End :: HTML Head -->
+<!-- ------------------------------------------------------------------------- -->
+
+
+
+
+
+<!-- ------------------------------------------------------------------------- -->
+<!-- Begin :: HTML Body -->
+<!-- ------------------------------------------------------------------------- -->
+<body>
+<div id="BodyBg"  style="padding:12px;">
+
+	<!--   NavBar -->
+    <header id="header">    
+    <div id="Pepqa2017NavBar"></div>
+    </header>
+    <!-- / NavBar -->
+   
+    <!-- Intro-->
+    <div class="panel panel-default">
+    <div class="panel-body" style="padding:5px;">
+     
+
+      <div class="col-sm-12" style="padding:0px;">
+       <img src="/images/Bogota/bogota_banner.png" width="100%">
+          <br>
+          <br>
+          <div class="col-sm-12" style="padding:0px;">
+              <div class="col-sm-9" style="padding:0px;"></div>
+              <div class="col-sm-3" style="padding:0px;">
+              <ul class="list-inline">
+              <li><a href="#BogotaInfo">Intro</a></li>
+             <!-- <li><a href="#BogotaTransport">Transport</a></li>
+              <li><a href="#BogotaAccommodation">Accommodation</a></li> -->
+            </ul>
+              </div>
+          </div>
+          <div  id="BogotaInfo">
+              <div class="col-sm-12 PepqaTextBox">
+
+                  <div class="col-sm-3">
+                      <img src="/images/Bogota/bogota1.jpg" class="img-circle" alt="Cinque Terre" width="100%">
+                  </div>
+                  <div class="col-sm-1"></div>
+                  <div class="col-sm-7">         
+
+                      <h1><strong>Manizales,Colombia</strong></h1>   
+
+                      <p class="PepqaTextBox">
+                            Manizales is the capital city of one of the smallest Colombian departments. 
+                            The city is described as having an "abrupt topography", and lies on the Colombian Central Mountain Range 
+                            (part of the longest continental mountain range, The Andes),
+                             with a great deal of ridgelines and steep slopes, which, combined with the seismic instability of the area, 
+                             has required architectural adaptations and public works to make the city safer. Even though Manizales has this very difficult topography, 
+                             there are many coffee plantations in its fertile lands. The city is located in the northern part of the Colombian Coffee-Growers Axis ("Eje Cafetero"),
+                             near the volcano Nevado del Ruiz, which has an altitude of 5,321 meters (17,457.3 ft).
+                      </p>
+
+                      <a href="http://www.colombia.travel/en/where-to-go/andean/manizales">http://www.colombia.travel/en/where-to-go/andean/manizales</a>
+
+                  </div>
+              </div> 
+              <br>
+              <br>
+              <div class="col-sm-12 PepqaTextBox">
+               <br>
+              <br>
+               
+              </div> 
+              <br>   
+           </div>
+          
+
+          
+            <br>   
+            </div>
+      </div>  
+
+        
+        
+    </div>
+    </div>
+    <!--/Intro-->
+
+
+    <div class="panel panel-default panel-body"  style="padding:0px;">
+    <div id="Pepqa2017Footer"></div>
+    </div>
+
+   
+    <script>$("#Pepqa2017NavBar").load("/src/NavBar.html");</script>
+    <script>$("#Pepqa2017Carousel").load("/src/Carousel.html");</script>
+    <script>$("#Pepqa2017Info").load("/src/Info.html");</script>    
+    <script>$("#Pepqa2017Benefits").load("/src/Benefits.html");</script> 
+    <script>$("#Pepqa2017Topics").load("/src/Topics.html");</script> 
+    <script>$("#Pepqa2017Footer").load("/src/Footer.html");</script> 
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+    <script>
+
+	var $animation_elements = $('.animation-element');
+	var $window = $(window);
+	function check_if_in_view() {
+	  var window_height = $window.height();
+	  var window_top_position = $window.scrollTop();
+	  var window_bottom_position = (window_top_position + window_height);
+	 
+	  $.each($animation_elements, function() {
+	    var $element = $(this);
+	    var element_height = $element.outerHeight();
+	    var element_top_position = $element.offset().top;
+	    var element_bottom_position = (element_top_position + element_height);
+	 
+	    //check to see if this current container is within viewport
+	    if ((element_bottom_position >= window_top_position) &&
+		(element_top_position <= window_bottom_position)) {
+	      $element.addClass('in-view');
+	    } else {
+	      $element.removeClass('in-view');
+	    }
+	  });
+ }
+	$window.on('scroll resize', check_if_in_view);
+	$window.trigger('scroll');
+	</script>
+    
+    
+
+</body>
+</html>
